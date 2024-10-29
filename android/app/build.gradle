@@ -108,6 +108,8 @@ android {
 }
 
 dependencies {
+    implementation("com.android.tools.build:gradle:7.3.1") // Add this line
+    implementation(platform("com.facebook.react:react-native:0.72.3"))
     // The version of react-native is set by the React Native Gradle Plugin
     implementation("com.facebook.react:react-android")
 
