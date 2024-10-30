@@ -1,41 +1,17 @@
-import React, { useState, useEffect } from 'react';
-import { View, Text, SafeAreaView, StyleSheet, Dimensions, LogBox } from 'react-native';
-import Carousel from 'react-native-snap-carousel';
+import React, { useState } from 'react';
+import { View, Text, SafeAreaView, StyleSheet, Dimensions } from 'react-native';
+import Carousel from 'react-native-reanimated-carousel';
 
 const { width: screenWidth } = Dimensions.get('window');
 
 const slides = [
-  { title: 'Welcome to DriveWise', description: 'Your ultimate driving companion.' },
+  { title: 'Welcome to DriveWise', description: 'Your ultimate driving companion!' },
   { title: 'Track Your Journeys', description: 'Keep a log of all your trips.' },
   { title: 'Stay Safe', description: 'Get real-time alerts and tips.' },
 ];
 
 const App = () => {
   const [activeSlide, setActiveSlide] = useState(0);
-
-  useEffect(() => {
-    // Ignore specific warnings
-    LogBox.ignoreLogs(['Warning: ...']);
-
-    // Global error handler
-    const errorHandler = (error: Error) => {
-      console.error('Uncaught error:', error);
-    };
-
-    // @ts-ignore
-    if (global.ErrorUtils) {
-      // @ts-ignore
-      global.ErrorUtils.setGlobalHandler(errorHandler);
-    }
-
-    return () => {
-      // @ts-ignore
-      if (global.ErrorUtils) {
-        // @ts-ignore
-        global.ErrorUtils.setGlobalHandler(null);
-      }
-    };
-  }, []);
 
   const renderItem = ({ item }) => (
     <View style={styles.slide}>
@@ -49,8 +25,8 @@ const App = () => {
       <Carousel
         data={slides}
         renderItem={renderItem}
-        sliderWidth={screenWidth}
-        itemWidth={screenWidth}
+        width={screenWidth}
+        height={200} // Adjust height as needed
         onSnapToItem={(index) => setActiveSlide(index)}
       />
       {activeSlide === slides.length - 1 && (

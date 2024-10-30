@@ -1,6 +1,9 @@
 apply plugin: 'com.android.application'
 apply plugin: 'com.facebook.react'
 apply plugin: 'kotlin-android'
+project.ext.react = [
+        enableHermes: true,  // Turn Hermes on
+]
 
 react {
     autolinkLibrariesWithApp()
@@ -25,6 +28,7 @@ android {
     }
     packagingOptions {
         pickFirst "**/libc++_shared.so"
+        pickFirst '**/libhermes*.so'
     }
 
     // Filter specific variants for react-native-camera
@@ -39,7 +43,10 @@ dependencies {
     implementation fileTree(dir: "libs", include: ["*.jar"])
     implementation "com.facebook.react:react-native:+"  // From node_modules
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
-
+    implementation("com.facebook.react:hermes-engine:+") { // Replace '+' with your react-native version if needed
+        exclude group: 'com.facebook.fbjni'
+    }
+    implementation("com.facebook.fbjni:fbjni:0.3.0")
     // Manually add dependencies for each package
     implementation project(':react-native-maps')
     implementation project(":react-native-camera")
