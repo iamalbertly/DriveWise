@@ -1,76 +1,74 @@
-import React, {useEffect, useState} from 'react';
-import {
-  View,
-  Text,
-  SafeAreaView,
-  LogBox,
-  Platform,
-  NativeModules,
-} from 'react-native';
+import React, { useState } from 'react';
+import { View, Text, SafeAreaView, StyleSheet, Dimensions } from 'react-native';
+import Carousel from 'react-native-snap-carousel';
+
+const { width: screenWidth } = Dimensions.get('window');
+
+const slides = [
+  { title: 'Welcome to DriveWise', description: 'Your ultimate driving companion.' },
+  { title: 'Track Your Journeys', description: 'Keep a log of all your trips.' },
+  { title: 'Stay Safe', description: 'Get real-time alerts and tips.' },
+];
 
 const App = () => {
-  const [error, setError] = useState<string | null>(null);
+  const [activeSlide, setActiveSlide] = useState(0);
 
-  useEffect(() => {
-    // Disable yellow box warnings in dev mode
-    LogBox.ignoreLogs(['Warning:']);
-
-    // Add detailed error handler
-    const errorHandler = (error: Error) => {
-      const errorMessage = `Error: ${error.message}\nStack: ${error.stack}`;
-      console.error('DriveWise Error:', errorMessage);
-      setError(errorMessage);
-    };
-
-    // Log app startup
-    console.log('DriveWise App Starting:', {
-      platform: Platform.OS,
-      version: Platform.Version,
-      apiLevel: Platform.OS === 'android' ? Platform.constants.Release : null,
-      deviceModel: Platform.constants.Model,
-    });
-
-    // Set up error boundary
-    if (__DEV__) {
-      console.log('DriveWise running in development mode');
-    }
-
-    // @ts-ignore
-    if (global.ErrorUtils) {
-      // @ts-ignore
-      global.ErrorUtils.setGlobalHandler(errorHandler);
-    }
-
-    return () => {
-      // @ts-ignore
-      if (global.ErrorUtils) {
-        // @ts-ignore
-        global.ErrorUtils.setGlobalHandler(null);
-      }
-    };
-  }, []);
-
-  // Show error UI if there's an error
-  if (error) {
-    return (
-      <SafeAreaView style={{flex: 1, backgroundColor: '#ff0000'}}>
-        <View style={{padding: 20}}>
-          <Text style={{color: 'white', fontSize: 16}}>
-            An error occurred in DriveWise:
-          </Text>
-          <Text style={{color: 'white', marginTop: 10}}>{error}</Text>
-        </View>
-      </SafeAreaView>
-    );
-  }
+  const renderItem = ({ item }) => (
+    <View style={styles.slide}>
+      <Text style={styles.title}>{item.title}</Text>
+      <Text style={styles.description}>{item.description}</Text>
+    </View>
+  );
 
   return (
-    <SafeAreaView style={{flex: 1}}>
-      <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
-        <Text>DriveWise App Running</Text>
-      </View>
+    <SafeAreaView style={styles.container}>
+      <Carousel
+        data={slides}
+        renderItem={renderItem}
+        sliderWidth={screenWidth}
+        itemWidth={screenWidth}
+        onSnapToItem={(index) => setActiveSlide(index)}
+      />
+      {activeSlide === slides.length - 1 && (
+        <View style={styles.mainPage}>
+          <Text style={styles.mainText}>DriveWise App Running</Text>
+        </View>
+      )}
     </SafeAreaView>
   );
 };
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+  },
+  slide: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    padding: 20,
+  },
+  title: {
+    fontSize: 24,
+    fontWeight: 'bold',
+  },
+  description: {
+    fontSize: 16,
+    textAlign: 'center',
+    marginTop: 10,
+  },
+  mainPage: {
+    position: 'absolute',
+    bottom: 50,
+    left: 0,
+    right: 0,
+    alignItems: 'center',
+  },
+  mainText: {
+    fontSize: 18,
+    color: '#000',
+  },
+});
 
 export default App;
