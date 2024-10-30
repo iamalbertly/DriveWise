@@ -1,13 +1,14 @@
 apply plugin: 'com.android.application'
 apply plugin: 'com.facebook.react'
 apply plugin: 'kotlin-android'
+
 react {
     autolinkLibrariesWithApp()
 }
+
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion
     namespace "com.drivewise"
-    compileSdkVersion 33
     defaultConfig {
         applicationId "com.drivewise"
         minSdkVersion rootProject.ext.minSdkVersion
@@ -25,18 +26,17 @@ android {
     packagingOptions {
         pickFirst "**/libc++_shared.so"
     }
+
     // Filter specific variants for react-native-camera
     variantFilter { variant ->
         if (variant.name.contains("mlkit") || variant.name.contains("release")) {
             variant.ignore = true
         }
     }
-
 }
 
 dependencies {
     implementation fileTree(dir: "libs", include: ["*.jar"])
-  //  implementation "com.facebook.react:react-android"
     implementation "com.facebook.react:react-native:+"  // From node_modules
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
 

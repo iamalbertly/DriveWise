@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { View, Text, SafeAreaView, StyleSheet, Dimensions } from 'react-native';
+import React, { useState, useEffect } from 'react';
+import { View, Text, SafeAreaView, StyleSheet, Dimensions, LogBox } from 'react-native';
 import Carousel from 'react-native-snap-carousel';
 
 const { width: screenWidth } = Dimensions.get('window');
@@ -12,6 +12,30 @@ const slides = [
 
 const App = () => {
   const [activeSlide, setActiveSlide] = useState(0);
+
+  useEffect(() => {
+    // Ignore specific warnings
+    LogBox.ignoreLogs(['Warning: ...']);
+
+    // Global error handler
+    const errorHandler = (error: Error) => {
+      console.error('Uncaught error:', error);
+    };
+
+    // @ts-ignore
+    if (global.ErrorUtils) {
+      // @ts-ignore
+      global.ErrorUtils.setGlobalHandler(errorHandler);
+    }
+
+    return () => {
+      // @ts-ignore
+      if (global.ErrorUtils) {
+        // @ts-ignore
+        global.ErrorUtils.setGlobalHandler(null);
+      }
+    };
+  }, []);
 
   const renderItem = ({ item }) => (
     <View style={styles.slide}>
