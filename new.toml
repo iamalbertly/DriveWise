@@ -1,0 +1,1 @@
+package = "${applicationId}${BuildConfig.APPLICATION_ID_SUFFIX}"
