@@ -1,22 +1,31 @@
 pluginManagement {
-    includeBuild("../node_modules/@react-native/gradle-plugin")
-}
-plugins {
-    id("com.facebook.react.settings")
-}
-dependencyResolutionManagement{
-    repositories{
-        maven { url "https://jitpack.io" }
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+        maven { url 'https://plugins.gradle.org/m2/' }
     }
 }
-extensions.configure(com.facebook.react.ReactSettingsExtension){ ex -> ex.autolinkLibrariesFromCommand() }
+includeBuild('../node_modules/@react-native/gradle-plugin')
+dependencyResolutionManagement {
+    repositories {
+        google()
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+        maven { url 'https://plugins.gradle.org/m2/' }
+    }
+}
 
 rootProject.name = 'DriveWise'
 include ':app'
-includeBuild('../node_modules/@react-native/gradle-plugin')
 
-// Manually include each native package as needed
+// Include necessary React Native modules
 include ':react-native-maps'
 project(':react-native-maps').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-maps/android')
-include ':react-native-camera'
-project(':react-native-camera').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-camera/android')
+
+include ':react-native-gesture-handler'
+project(':react-native-gesture-handler').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-gesture-handler/android')
+
+include ':react-native-reanimated'
+project(':react-native-reanimated').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-reanimated/android')

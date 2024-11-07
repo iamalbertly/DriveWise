@@ -1,23 +1,46 @@
+ext {
+    kotlin_version = '1.9.22'
+    buildToolsVersion = "34.0.0"
+    minSdkVersion = 21
+    compileSdkVersion = 34
+    targetSdkVersion = 34
+    ndkVersion = "26.1.10909125"
+    enableProguardInReleaseBuilds = true
+    enableHermes = true
+}
+
 buildscript {
-    ext.kotlin_version = '1.9.24'
-    ext {
-        buildToolsVersion = "34.0.0"
-        minSdkVersion = 24
-        compileSdkVersion = 34
-        targetSdkVersion = 34
-        ndkVersion = "25.2.9519653"
-        kotlinVersion = "1.9.24"
-        enableProguardInReleaseBuilds = false // Set to true if Proguard is needed in release builds
-    }
     repositories {
         google()
         mavenCentral()
+        gradlePluginPortal()
+        maven { url 'https://jitpack.io' }
+        maven { url 'https://plugins.gradle.org/m2/' }
     }
+
     dependencies {
-        classpath("com.android.tools.build:gradle:8.1.1")
-        classpath("com.facebook.react:react-native-gradle-plugin:0.72.3")
-        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath("com.android.tools.build:gradle:8.2.2")
+        // Use kotlin_version variable defined above
+        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:1.9.22")
     }
 }
 
-apply plugin: "com.facebook.react.rootproject"
+// Now you can use ext to define properties accessible to other modules
+ext {
+    kotlin_version = kotlin_version
+    buildToolsVersion = buildToolsVersion
+    minSdkVersion = minSdkVersion
+    compileSdkVersion = compileSdkVersion
+    targetSdkVersion = targetSdkVersion
+    ndkVersion = ndkVersion
+    enableProguardInReleaseBuilds = enableProguardInReleaseBuilds
+    enableHermes = enableHermes
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+    }
+}

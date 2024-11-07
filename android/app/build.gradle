@@ -1,53 +1,63 @@
-apply plugin: 'com.android.application'
-apply plugin: 'com.facebook.react'
-apply plugin: 'kotlin-android'
-project.ext.react = [
-        enableHermes: true,  // Turn Hermes on
-]
-
-react {
-    autolinkLibrariesWithApp()
+plugins {
+    id 'com.android.application'
+    id 'com.facebook.react'
+    id 'kotlin-android'
 }
 
 android {
-    compileSdkVersion rootProject.ext.compileSdkVersion
     namespace "com.drivewise"
+    compileSdkVersion rootProject.ext.compileSdkVersion
+
     defaultConfig {
         applicationId "com.drivewise"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
         versionName "1.0"
-        missingDimensionStrategy 'react-native-camera', 'general'
     }
+
+    signingConfigs {
+        debug {
+            storeFile file('debug.keystore')
+            storePassword 'android'
+            keyAlias 'androiddebugkey'
+            keyPassword 'android'
+        }
+    }
+
     buildTypes {
+        debug {
+            signingConfig signingConfigs.debug
+        }
         release {
             minifyEnabled enableProguardInReleaseBuilds
             proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
+            signingConfig signingConfigs.debug
         }
-    }
-    packagingOptions {
-        pickFirst "**/libc++_shared.so"
-        pickFirst '**/libhermes*.so'
     }
 
-    // Filter specific variants for react-native-camera
-    variantFilter { variant ->
-        if (variant.name.contains("mlkit") || variant.name.contains("release")) {
-            variant.ignore = true
-        }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    kotlinOptions {
+        jvmTarget = '17'
     }
 }
 
 dependencies {
-    implementation fileTree(dir: "libs", include: ["*.jar"])
-    implementation "com.facebook.react:react-native:+"  // From node_modules
-    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
-    implementation("com.facebook.react:hermes-engine:+") { // Replace '+' with your react-native version if needed
-        exclude group: 'com.facebook.fbjni'
-    }
-    implementation("com.facebook.fbjni:fbjni:0.3.0")
-    // Manually add dependencies for each package
+    // Kotlin
+    implementation platform('org.jetbrains.kotlin:kotlin-bom:1.9.22')
+    implementation "org.jetbrains.kotlin:kotlin-stdlib"
+
+    // React Native
+    implementation "com.facebook.react:react-android"
+
+    // AndroidX
+    implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.1.0"
+    implementation "androidx.core:core-ktx:1.12.0"
+
+    // React Native modules
     implementation project(':react-native-maps')
-    implementation project(":react-native-camera")
 }

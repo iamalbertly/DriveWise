@@ -1,0 +1,29 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug Android",
+      "type": "reactnative",
+      "request": "launch",
+      "platform": "android",
+      "sourceMaps": true,
+      "enableDebug": true
+    },
+    {
+      "name": "Debug iOS",
+      "type": "reactnative",
+      "request": "launch",
+      "platform": "ios",
+      "sourceMaps": true,
+      "enableDebug": true
+    },
+    {
+      "name": "Attach to packager",
+      "type": "reactnative",
+      "request": "attach",
+      "port": 8081,
+      "sourceMaps": true,
+      "enableDebug": true
+    }
+  ]
+} 
