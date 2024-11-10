@@ -1,0 +1,465 @@
+Initialized native services in: C:\Users\hp\.gradle\native
+Initialized jansi services in: C:\Users\hp\.gradle\native
+Received JVM installation metadata from 'C:\Program Files\Java\jdk-17': {JAVA_HOME=C:\Program Files\Java\jdk-17, JAVA_VERSION=17.0.12, JAVA_VENDOR=Oracle Corporation, RUNTIME_NAME=Java(TM) SE Runtime Environment, RUNTIME_VERSION=17.0.12+8-LTS-286, VM_NAME=Java HotSpot(TM) 64-Bit Server VM, VM_VERSION=17.0.12+8-LTS-286, VM_VENDOR=Oracle Corporation, OS_ARCH=amd64}
+The client will now receive all logging from the daemon (pid: 11980). The daemon log file: C:\Users\hp\.gradle\daemon\8.0.2\daemon-11980.out.log
+Starting 4th build in daemon [uptime: 6 mins 17.053 secs, performance: 99%, GC rate: 0.00/s, heap usage: 0% of 6 GiB]
+Using 8 worker leases.
+Now considering [C:\Users\hp\Documents\GitHub\DriveWise\android, C:\Users\hp\Documents\GitHub\DriveWise\node_modules\@react-native\gradle-plugin] as hierarchies to watch
+Watching 2 directory hierarchies to track changes
+Watching the file system is configured to be enabled if available
+File system watching is active
+Starting Build
+Settings evaluated using settings file 'C:\Users\hp\Documents\GitHub\DriveWise\android\settings.gradle'.
+Using local directory build cache for the root build (location = C:\Users\hp\.gradle\caches\build-cache-1, removeUnusedEntriesAfter = 7 days).
+Now considering [C:\Users\hp\Documents\GitHub\DriveWise\node_modules\@react-native\gradle-plugin, C:\Users\hp\Documents\GitHub\DriveWise\android] as hierarchies to watch
+Watching 2 directory hierarchies to track changes
+The configuration detachedConfiguration1 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration detachedConfiguration1 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration detachedConfiguration1 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration detachedConfiguration1 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration classpath is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration classpath is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration classpath is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration classpath is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+Projects loaded. Root project using build file 'C:\Users\hp\Documents\GitHub\DriveWise\android\build.gradle'.
+Included projects: [root project 'DriveWise', project ':app', project ':react-native-gesture-handler', project ':react-native-maps', project ':react-native-reanimated', project ':react-native-vision-camera']
+
+> Configure project :
+Evaluating root project 'DriveWise' using build file 'C:\Users\hp\Documents\GitHub\DriveWise\android\build.gradle'.
+The configuration :classpath is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :classpath is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :classpath is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :classpath is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+
+> Configure project :gradle-plugin
+Evaluating project ':gradle-plugin' using build file 'C:\Users\hp\Documents\GitHub\DriveWise\node_modules\@react-native\gradle-plugin\build.gradle.kts'.
+The configuration detachedConfiguration1 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration detachedConfiguration1 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration detachedConfiguration1 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration detachedConfiguration1 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :gradle-plugin:classpath is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :gradle-plugin:classpath is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :gradle-plugin:classpath is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :gradle-plugin:classpath is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+
+> Configure project :gradle-plugin:react-native-gradle-plugin
+Evaluating project ':gradle-plugin:react-native-gradle-plugin' using build file 'C:\Users\hp\Documents\GitHub\DriveWise\node_modules\@react-native\gradle-plugin\react-native-gradle-plugin\build.gradle.kts'.
+The configuration :gradle-plugin:react-native-gradle-plugin:classpath is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :gradle-plugin:react-native-gradle-plugin:classpath is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :gradle-plugin:react-native-gradle-plugin:classpath is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :gradle-plugin:react-native-gradle-plugin:classpath is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+Using Kotlin Gradle Plugin gradle80 variant
+kotlin scripting plugin: created the scripting discovery configuration: kotlinScriptDef
+kotlin scripting plugin: created the scripting discovery configuration: testKotlinScriptDef
+Build cache key for Kotlin DSL accessors for project ':gradle-plugin:react-native-gradle-plugin' is 4b0718f71dc2a49db42650c51a66edbe
+Skipping Kotlin DSL accessors for project ':gradle-plugin:react-native-gradle-plugin' as it is up-to-date.
+
+> Configure project :gradle-plugin:settings-plugin
+Evaluating project ':gradle-plugin:settings-plugin' using build file 'C:\Users\hp\Documents\GitHub\DriveWise\node_modules\@react-native\gradle-plugin\settings-plugin\build.gradle.kts'.
+The configuration :gradle-plugin:settings-plugin:classpath is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :gradle-plugin:settings-plugin:classpath is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :gradle-plugin:settings-plugin:classpath is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :gradle-plugin:settings-plugin:classpath is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+Using Kotlin Gradle Plugin gradle80 variant
+kotlin scripting plugin: created the scripting discovery configuration: kotlinScriptDef
+kotlin scripting plugin: created the scripting discovery configuration: testKotlinScriptDef
+Build cache key for Kotlin DSL accessors for project ':gradle-plugin:settings-plugin' is 4b0718f71dc2a49db42650c51a66edbe
+Skipping Kotlin DSL accessors for project ':gradle-plugin:settings-plugin' as it is up-to-date.
+
+> Configure project :gradle-plugin:shared
+Evaluating project ':gradle-plugin:shared' using build file 'C:\Users\hp\Documents\GitHub\DriveWise\node_modules\@react-native\gradle-plugin\shared\build.gradle.kts'.
+The configuration :gradle-plugin:shared:classpath is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :gradle-plugin:shared:classpath is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :gradle-plugin:shared:classpath is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :gradle-plugin:shared:classpath is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+Using Kotlin Gradle Plugin gradle80 variant
+kotlin scripting plugin: created the scripting discovery configuration: kotlinScriptDef
+kotlin scripting plugin: created the scripting discovery configuration: testKotlinScriptDef
+Build cache key for Kotlin DSL accessors for project ':gradle-plugin:shared' is d97266837c00f5d31043d2525da1da61
+Skipping Kotlin DSL accessors for project ':gradle-plugin:shared' as it is up-to-date.
+
+> Configure project :gradle-plugin:shared-testutil
+Evaluating project ':gradle-plugin:shared-testutil' using build file 'C:\Users\hp\Documents\GitHub\DriveWise\node_modules\@react-native\gradle-plugin\shared-testutil\build.gradle.kts'.
+The configuration :gradle-plugin:shared-testutil:classpath is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :gradle-plugin:shared-testutil:classpath is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :gradle-plugin:shared-testutil:classpath is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :gradle-plugin:shared-testutil:classpath is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+Using Kotlin Gradle Plugin gradle80 variant
+kotlin scripting plugin: created the scripting discovery configuration: kotlinScriptDef
+kotlin scripting plugin: created the scripting discovery configuration: testKotlinScriptDef
+Build cache key for Kotlin DSL accessors for project ':gradle-plugin:shared-testutil' is d97266837c00f5d31043d2525da1da61
+Skipping Kotlin DSL accessors for project ':gradle-plugin:shared-testutil' as it is up-to-date.
+Resolve mutations for :gradle-plugin:react-native-gradle-plugin:checkKotlinGradlePluginConfigurationErrors (Thread[Execution worker,5,main]) started.
+Resolve mutations for :gradle-plugin:shared:checkKotlinGradlePluginConfigurationErrors (Thread[Execution worker Thread 2,5,main]) started.
+:gradle-plugin:shared:checkKotlinGradlePluginConfigurationErrors (Thread[Execution worker Thread 2,5,main]) started.
+:gradle-plugin:react-native-gradle-plugin:checkKotlinGradlePluginConfigurationErrors (Thread[Execution worker,5,main]) started.
+
+> Task :gradle-plugin:shared:checkKotlinGradlePluginConfigurationErrors
+Caching disabled for task ':gradle-plugin:shared:checkKotlinGradlePluginConfigurationErrors' because:
+  This task renders reported diagnostics; caching this task will hide diagnostics and obscure issues in the build
+Task ':gradle-plugin:shared:checkKotlinGradlePluginConfigurationErrors' is not up-to-date because:
+  Task has not declared any outputs despite executing actions.
+
+> Task :gradle-plugin:react-native-gradle-plugin:checkKotlinGradlePluginConfigurationErrors
+Caching disabled for task ':gradle-plugin:react-native-gradle-plugin:checkKotlinGradlePluginConfigurationErrors' because:
+  This task renders reported diagnostics; caching this task will hide diagnostics and obscure issues in the build
+Task ':gradle-plugin:react-native-gradle-plugin:checkKotlinGradlePluginConfigurationErrors' is not up-to-date because:
+  Task has not declared any outputs despite executing actions.
+Resolve mutations for :gradle-plugin:shared:compileKotlin (Thread[Execution worker Thread 2,5,main]) started.
+Resolve mutations for :gradle-plugin:react-native-gradle-plugin:pluginDescriptors (Thread[Execution worker,5,main]) started.
+:gradle-plugin:react-native-gradle-plugin:pluginDescriptors (Thread[Execution worker,5,main]) started.
+:gradle-plugin:shared:compileKotlin (Thread[Execution worker Thread 6,5,main]) started.
+
+> Task :gradle-plugin:react-native-gradle-plugin:pluginDescriptors UP-TO-DATE
+Caching disabled for task ':gradle-plugin:react-native-gradle-plugin:pluginDescriptors' because:
+  Not worth caching
+Skipping task ':gradle-plugin:react-native-gradle-plugin:pluginDescriptors' as it is up-to-date.
+Resolve mutations for :gradle-plugin:react-native-gradle-plugin:processResources (Thread[Execution worker,5,main]) started.
+:gradle-plugin:react-native-gradle-plugin:processResources (Thread[Execution worker,5,main]) started.
+
+> Task :gradle-plugin:react-native-gradle-plugin:processResources UP-TO-DATE
+Caching disabled for task ':gradle-plugin:react-native-gradle-plugin:processResources' because:
+  Not worth caching
+Skipping task ':gradle-plugin:react-native-gradle-plugin:processResources' as it is up-to-date.
+
+> Task :gradle-plugin:shared:compileKotlin UP-TO-DATE
+Transforming kotlin-stdlib-1.9.24.jar with ClasspathEntrySnapshotTransform
+Transforming gson-2.8.9.jar with ClasspathEntrySnapshotTransform
+Transforming guava-31.0.1-jre.jar with ClasspathEntrySnapshotTransform
+Transforming annotations-13.0.jar with ClasspathEntrySnapshotTransform
+Transforming failureaccess-1.0.1.jar with ClasspathEntrySnapshotTransform
+Transforming listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar with ClasspathEntrySnapshotTransform
+Transforming jsr305-3.0.2.jar with ClasspathEntrySnapshotTransform
+Transforming checker-qual-3.12.0.jar with ClasspathEntrySnapshotTransform
+Transforming error_prone_annotations-2.7.1.jar with ClasspathEntrySnapshotTransform
+Transforming j2objc-annotations-1.3.jar with ClasspathEntrySnapshotTransform
+Build cache key for task ':gradle-plugin:shared:compileKotlin' is a998a59585877643deefd9bf4c4907a4
+Skipping task ':gradle-plugin:shared:compileKotlin' as it is up-to-date.
+Resolve mutations for :gradle-plugin:shared:compileJava (Thread[Execution worker Thread 6,5,main]) started.
+:gradle-plugin:shared:compileJava (Thread[Execution worker Thread 6,5,main]) started.
+
+> Task :gradle-plugin:shared:compileJava NO-SOURCE
+Skipping task ':gradle-plugin:shared:compileJava' as it has no source files and no previous output files.
+Resolve mutations for :gradle-plugin:shared:processResources (Thread[Execution worker Thread 5,5,main]) started.
+:gradle-plugin:shared:processResources (Thread[Execution worker Thread 5,5,main]) started.
+
+> Task :gradle-plugin:shared:processResources NO-SOURCE
+Skipping task ':gradle-plugin:shared:processResources' as it has no source files and no previous output files.
+Resolve mutations for :gradle-plugin:shared:classes (Thread[Execution worker Thread 5,5,main]) started.
+:gradle-plugin:shared:classes (Thread[Execution worker Thread 5,5,main]) started.
+
+> Task :gradle-plugin:shared:classes UP-TO-DATE
+Skipping task ':gradle-plugin:shared:classes' as it has no actions.
+Resolve mutations for :gradle-plugin:shared:jar (Thread[Execution worker Thread 5,5,main]) started.
+:gradle-plugin:shared:jar (Thread[Execution worker Thread 5,5,main]) started.
+
+> Task :gradle-plugin:shared:jar UP-TO-DATE
+Caching disabled for task ':gradle-plugin:shared:jar' because:
+  Not worth caching
+Skipping task ':gradle-plugin:shared:jar' as it is up-to-date.
+work action resolve shared.jar (project :gradle-plugin:shared) (Thread[Execution worker Thread 5,5,main]) started.
+Resolve mutations for :gradle-plugin:react-native-gradle-plugin:compileKotlin (Thread[Execution worker Thread 5,5,main]) started.
+:gradle-plugin:react-native-gradle-plugin:compileKotlin (Thread[Execution worker Thread 5,5,main]) started.
+
+> Task :gradle-plugin:react-native-gradle-plugin:compileKotlin UP-TO-DATE
+Transforming gradle-api-8.0.2.jar with ClasspathEntrySnapshotTransform
+Transforming groovy-3.0.13.jar with ClasspathEntrySnapshotTransform
+Transforming groovy-ant-3.0.13.jar with ClasspathEntrySnapshotTransform
+Transforming groovy-astbuilder-3.0.13.jar with ClasspathEntrySnapshotTransform
+Transforming groovy-console-3.0.13.jar with ClasspathEntrySnapshotTransform
+Transforming groovy-datetime-3.0.13.jar with ClasspathEntrySnapshotTransform
+Transforming groovy-dateutil-3.0.13.jar with ClasspathEntrySnapshotTransform
+Transforming groovy-groovydoc-3.0.13.jar with ClasspathEntrySnapshotTransform
+Transforming groovy-json-3.0.13.jar with ClasspathEntrySnapshotTransform
+Transforming groovy-nio-3.0.13.jar with ClasspathEntrySnapshotTransform
+Transforming groovy-sql-3.0.13.jar with ClasspathEntrySnapshotTransform
+Transforming groovy-templates-3.0.13.jar with ClasspathEntrySnapshotTransform
+Transforming groovy-test-3.0.13.jar with ClasspathEntrySnapshotTransform
+Transforming groovy-xml-3.0.13.jar with ClasspathEntrySnapshotTransform
+Transforming javaparser-core-3.17.0.jar with ClasspathEntrySnapshotTransform
+Transforming kotlin-stdlib-1.8.10.jar with ClasspathEntrySnapshotTransform
+Transforming kotlin-stdlib-common-1.8.10.jar with ClasspathEntrySnapshotTransform
+Transforming kotlin-reflect-1.8.10.jar with ClasspathEntrySnapshotTransform
+Transforming kotlin-stdlib-jdk7-1.8.10.jar with ClasspathEntrySnapshotTransform
+Transforming kotlin-stdlib-jdk8-1.8.10.jar with ClasspathEntrySnapshotTransform
+Transforming gradle-installation-beacon-8.0.2.jar with ClasspathEntrySnapshotTransform
+Transforming shared.jar with ClasspathEntrySnapshotTransform
+Transforming kotlin-stdlib-1.9.24.jar with ClasspathEntrySnapshotTransform
+Transforming kotlin-gradle-plugin-model-1.9.24.jar with ClasspathEntrySnapshotTransform
+Transforming kotlin-gradle-plugin-api-1.9.24.jar with ClasspathEntrySnapshotTransform
+Transforming kotlin-gradle-plugin-1.9.24-gradle80.jar with ClasspathEntrySnapshotTransform
+Transforming gradle-8.6.0.jar with ClasspathEntrySnapshotTransform
+Transforming gson-2.8.9.jar with ClasspathEntrySnapshotTransform
+Transforming guava-31.0.1-jre.jar with ClasspathEntrySnapshotTransform
+Transforming javapoet-1.13.0.jar with ClasspathEntrySnapshotTransform
+Transforming annotations-13.0.jar with ClasspathEntrySnapshotTransform
+Transforming builder-8.6.0.jar with ClasspathEntrySnapshotTransform
+Transforming builder-model-8.6.0.jar with ClasspathEntrySnapshotTransform
+Transforming gradle-api-8.6.0.jar with ClasspathEntrySnapshotTransform
+Transforming failureaccess-1.0.1.jar with ClasspathEntrySnapshotTransform
+Transforming listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar with ClasspathEntrySnapshotTransform
+Transforming jsr305-3.0.2.jar with ClasspathEntrySnapshotTransform
+Transforming checker-qual-3.12.0.jar with ClasspathEntrySnapshotTransform
+Transforming error_prone_annotations-2.7.1.jar with ClasspathEntrySnapshotTransform
+Transforming j2objc-annotations-1.3.jar with ClasspathEntrySnapshotTransform
+Transforming kotlin-gradle-plugin-annotations-1.9.24.jar with ClasspathEntrySnapshotTransform
+Transforming kotlin-native-utils-1.9.24.jar with ClasspathEntrySnapshotTransform
+Transforming kotlin-tooling-core-1.9.24.jar with ClasspathEntrySnapshotTransform
+Transforming kotlin-project-model-1.9.24.jar with ClasspathEntrySnapshotTransform
+Transforming manifest-merger-31.6.0.jar with ClasspathEntrySnapshotTransform
+Transforming zipflinger-8.6.0.jar with ClasspathEntrySnapshotTransform
+Transforming apksig-8.6.0.jar with ClasspathEntrySnapshotTransform
+Transforming apkzlib-8.6.0.jar with ClasspathEntrySnapshotTransform
+Transforming javawriter-2.5.0.jar with ClasspathEntrySnapshotTransform
+Transforming asm-9.6.jar with ClasspathEntrySnapshotTransform
+Transforming kotlin-util-klib-1.9.24.jar with ClasspathEntrySnapshotTransform
+Transforming kotlin-util-io-1.9.24.jar with ClasspathEntrySnapshotTransform
+Build cache key for task ':gradle-plugin:react-native-gradle-plugin:compileKotlin' is c88f557f10f71dd18022649dfd8ba200
+Skipping task ':gradle-plugin:react-native-gradle-plugin:compileKotlin' as it is up-to-date.
+Resolve mutations for :gradle-plugin:react-native-gradle-plugin:compileJava (Thread[Execution worker Thread 5,5,main]) started.
+:gradle-plugin:react-native-gradle-plugin:compileJava (Thread[Execution worker Thread 5,5,main]) started.
+
+> Task :gradle-plugin:react-native-gradle-plugin:compileJava NO-SOURCE
+Skipping task ':gradle-plugin:react-native-gradle-plugin:compileJava' as it has no source files and no previous output files.
+Resolve mutations for :gradle-plugin:react-native-gradle-plugin:classes (Thread[Execution worker Thread 5,5,main]) started.
+:gradle-plugin:react-native-gradle-plugin:classes (Thread[Execution worker Thread 5,5,main]) started.
+
+> Task :gradle-plugin:react-native-gradle-plugin:classes UP-TO-DATE
+Skipping task ':gradle-plugin:react-native-gradle-plugin:classes' as it has no actions.
+Resolve mutations for :gradle-plugin:react-native-gradle-plugin:jar (Thread[Execution worker Thread 5,5,main]) started.
+:gradle-plugin:react-native-gradle-plugin:jar (Thread[Execution worker Thread 5,5,main]) started.
+
+> Task :gradle-plugin:react-native-gradle-plugin:jar UP-TO-DATE
+Caching disabled for task ':gradle-plugin:react-native-gradle-plugin:jar' because:
+  Not worth caching
+Skipping task ':gradle-plugin:react-native-gradle-plugin:jar' as it is up-to-date.
+
+> Configure project :app
+Evaluating project ':app' using build file 'C:\Users\hp\Documents\GitHub\DriveWise\android\app\build.gradle'.
+Skipping generation of dependency accessors for libs as it is up-to-date.
+The configuration :app:classpath is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :app:classpath is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :gradle-plugin:react-native-gradle-plugin:mainSourceElements is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :gradle-plugin:react-native-gradle-plugin:testResultsElementsForTest is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :gradle-plugin:shared:mainSourceElements is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :gradle-plugin:shared:testResultsElementsForTest is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :app:classpath is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :app:classpath is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+Using default execution profile
+Using Kotlin Gradle Plugin gradle76 variant
+Parsed shrinker version: 8.0.46
+
+> Configure project :react-native-gesture-handler
+Evaluating project ':react-native-gesture-handler' using build file 'C:\Users\hp\Documents\GitHub\DriveWise\node_modules\react-native-gesture-handler\android\build.gradle'.
+The configuration :react-native-gesture-handler:classpath is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :react-native-gesture-handler:classpath is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :react-native-gesture-handler:classpath is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :react-native-gesture-handler:classpath is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+Using default execution profile
+Using Kotlin Gradle Plugin gradle76 variant
+
+> Configure project :react-native-maps
+Evaluating project ':react-native-maps' using build file 'C:\Users\hp\Documents\GitHub\DriveWise\node_modules\react-native-maps\android\build.gradle'.
+Using default execution profile
+
+> Configure project :react-native-reanimated
+Evaluating project ':react-native-reanimated' using build file 'C:\Users\hp\Documents\GitHub\DriveWise\node_modules\react-native-reanimated\android\build.gradle'.
+The configuration :react-native-reanimated:classpath is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :react-native-reanimated:classpath is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :react-native-reanimated:classpath is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :react-native-reanimated:classpath is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+Using default execution profile
+Android gradle plugin: 8.0.2
+Gradle: 8.0.2
+C/C++: android.ndkVersion from module build.gradle is [25.2.9519653]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is C:\Users\hp\AppData\Local\Android\Sdk
+C/C++: android.ndkVersion from module build.gradle is [25.2.9519653]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is C:\Users\hp\AppData\Local\Android\Sdk
+C/C++: android.ndkVersion from module build.gradle is [25.2.9519653]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is C:\Users\hp\AppData\Local\Android\Sdk
+C/C++: android.ndkVersion from module build.gradle is [25.2.9519653]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is C:\Users\hp\AppData\Local\Android\Sdk
+C/C++: android.ndkVersion from module build.gradle is [25.2.9519653]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is C:\Users\hp\AppData\Local\Android\Sdk
+C/C++: android.ndkVersion from module build.gradle is [25.2.9519653]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is C:\Users\hp\AppData\Local\Android\Sdk
+C/C++: android.ndkVersion from module build.gradle is [25.2.9519653]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is C:\Users\hp\AppData\Local\Android\Sdk
+C/C++: android.ndkVersion from module build.gradle is [25.2.9519653]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is C:\Users\hp\AppData\Local\Android\Sdk
+C/C++: android.ndkVersion from module build.gradle is [25.2.9519653]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is C:\Users\hp\AppData\Local\Android\Sdk
+C/C++: android.ndkVersion from module build.gradle is [25.2.9519653]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is C:\Users\hp\AppData\Local\Android\Sdk
+C/C++: android.ndkVersion from module build.gradle is [25.2.9519653]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is C:\Users\hp\AppData\Local\Android\Sdk
+
+> Configure project :react-native-vision-camera
+Evaluating project ':react-native-vision-camera' using build file 'C:\Users\hp\Documents\GitHub\DriveWise\node_modules\react-native-vision-camera\android\build.gradle'.
+The configuration :react-native-vision-camera:classpath is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :react-native-vision-camera:classpath is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :react-native-vision-camera:classpath is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :react-native-vision-camera:classpath is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+Using default execution profile
+Using Kotlin Gradle Plugin gradle76 variant
+[VisionCamera] Thank you for using VisionCamera ??
+[VisionCamera] If you enjoy using VisionCamera, please consider sponsoring this project: https://github.com/sponsors/mrousavy
+[VisionCamera] node_modules found at C:\Users\hp\Documents\GitHub\DriveWise\node_modules
+[VisionCamera] VisionCamera_enableFrameProcessors is set to true!
+[VisionCamera] react-native-worklets-core not found, Frame Processors are disabled!
+[VisionCamera] VisionCamera_enableCodeScanner is set to false!
+C/C++: android.ndkVersion from module build.gradle is [25.2.9519653]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is C:\Users\hp\AppData\Local\Android\Sdk
+C/C++: android.ndkVersion from module build.gradle is [25.2.9519653]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is C:\Users\hp\AppData\Local\Android\Sdk
+C/C++: android.ndkVersion from module build.gradle is [25.2.9519653]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is C:\Users\hp\AppData\Local\Android\Sdk
+C/C++: android.ndkVersion from module build.gradle is [25.2.9519653]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is C:\Users\hp\AppData\Local\Android\Sdk
+C/C++: android.ndkVersion from module build.gradle is [25.2.9519653]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is C:\Users\hp\AppData\Local\Android\Sdk
+C/C++: android.ndkVersion from module build.gradle is [25.2.9519653]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is C:\Users\hp\AppData\Local\Android\Sdk
+C/C++: android.ndkVersion from module build.gradle is [25.2.9519653]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is C:\Users\hp\AppData\Local\Android\Sdk
+C/C++: android.ndkVersion from module build.gradle is [25.2.9519653]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is C:\Users\hp\AppData\Local\Android\Sdk
+C/C++: android.ndkVersion from module build.gradle is [25.2.9519653]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is C:\Users\hp\AppData\Local\Android\Sdk
+C/C++: android.ndkVersion from module build.gradle is [25.2.9519653]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is C:\Users\hp\AppData\Local\Android\Sdk
+C/C++: android.ndkVersion from module build.gradle is [25.2.9519653]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is C:\Users\hp\AppData\Local\Android\Sdk
+All projects evaluated.
+The configuration :classpath is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :classpath is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :classpath is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :classpath is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :classpath is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :classpath is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :classpath is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :classpath is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :classpath is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :classpath is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :app:classpath is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :app:classpath is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :app:classpath is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :app:classpath is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :app:classpath is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :app:classpath is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :app:classpath is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :app:classpath is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :app:classpath is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :app:classpath is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :react-native-gesture-handler:classpath is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :react-native-gesture-handler:classpath is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :react-native-gesture-handler:classpath is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :react-native-gesture-handler:classpath is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :react-native-gesture-handler:classpath is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :react-native-gesture-handler:classpath is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :react-native-gesture-handler:classpath is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :react-native-gesture-handler:classpath is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :react-native-gesture-handler:classpath is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :react-native-gesture-handler:classpath is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :react-native-maps:classpath is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :react-native-maps:classpath is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :react-native-maps:classpath is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :react-native-maps:classpath is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :react-native-maps:classpath is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :react-native-maps:classpath is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :react-native-maps:classpath is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :react-native-maps:classpath is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :react-native-maps:classpath is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :react-native-maps:classpath is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :react-native-maps:classpath is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :react-native-maps:classpath is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :react-native-reanimated:classpath is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :react-native-reanimated:classpath is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :react-native-reanimated:classpath is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :react-native-reanimated:classpath is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :react-native-reanimated:classpath is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :react-native-reanimated:classpath is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :react-native-reanimated:classpath is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :react-native-reanimated:classpath is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :react-native-reanimated:classpath is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :react-native-reanimated:classpath is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :react-native-vision-camera:classpath is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :react-native-vision-camera:classpath is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :react-native-vision-camera:classpath is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :react-native-vision-camera:classpath is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :react-native-vision-camera:classpath is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :react-native-vision-camera:classpath is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :react-native-vision-camera:classpath is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :react-native-vision-camera:classpath is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :react-native-vision-camera:classpath is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :react-native-vision-camera:classpath is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+Task name matched 'assembleDebug'
+Selected primary task 'assembleDebug' from project :
+8 actionable tasks: 2 executed, 6 up-to-date
+Watched directory hierarchies: [C:\Users\hp\Documents\GitHub\DriveWise\node_modules\@react-native\gradle-plugin, C:\Users\hp\Documents\GitHub\DriveWise\android]
