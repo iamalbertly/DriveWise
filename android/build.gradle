@@ -1,10 +1,10 @@
 ext {
-    kotlin_version = '1.9.22'
-    buildToolsVersion = "34.0.0"
-    minSdkVersion = 21
-    compileSdkVersion = 34
-    targetSdkVersion = 34
-    ndkVersion = "26.1.10909125"
+    kotlin_version = '1.8.22'
+    buildToolsVersion = "33.0.2"
+    minSdkVersion = 24
+    compileSdkVersion = 33
+    targetSdkVersion = 33
+    ndkVersion = "25.2.9519653"
     enableProguardInReleaseBuilds = true
     enableHermes = true
 }
@@ -17,25 +17,12 @@ buildscript {
         maven { url 'https://jitpack.io' }
         maven { url 'https://plugins.gradle.org/m2/' }
     }
-
     dependencies {
         classpath("com.android.tools.build:gradle:8.2.2")
-        // Use kotlin_version variable defined above
-        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:1.9.22")
+        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:1.8.22")
     }
 }
 
-// Now you can use ext to define properties accessible to other modules
-ext {
-    kotlin_version = kotlin_version
-    buildToolsVersion = buildToolsVersion
-    minSdkVersion = minSdkVersion
-    compileSdkVersion = compileSdkVersion
-    targetSdkVersion = targetSdkVersion
-    ndkVersion = ndkVersion
-    enableProguardInReleaseBuilds = enableProguardInReleaseBuilds
-    enableHermes = enableHermes
-}
 
 allprojects {
     repositories {

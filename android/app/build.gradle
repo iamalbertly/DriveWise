@@ -37,27 +37,38 @@ android {
     }
 
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_17
-        targetCompatibility JavaVersion.VERSION_17
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+
+    java {
+        toolchain {
+            languageVersion = JavaLanguageVersion.of(11)
+        }
     }
 
     kotlinOptions {
-        jvmTarget = '17'
+        jvmTarget = '11'
+    }
+
+    buildFeatures {
+        viewBinding true
     }
 }
 
+react {
+    reactNativeDir = rootProject.file("../node_modules/react-native")
+    autolinkLibrariesWithApp()
+}
+
 dependencies {
-    // Kotlin
-    implementation platform('org.jetbrains.kotlin:kotlin-bom:1.9.22')
-    implementation "org.jetbrains.kotlin:kotlin-stdlib"
-
-    // React Native
+    implementation platform('org.jetbrains.kotlin:kotlin-bom:1.8.22')
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
     implementation "com.facebook.react:react-android"
-
-    // AndroidX
     implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.1.0"
     implementation "androidx.core:core-ktx:1.12.0"
-
-    // React Native modules
     implementation project(':react-native-maps')
+    implementation project(':react-native-gesture-handler')
+    implementation project(':react-native-reanimated')
+    implementation project(':react-native-vision-camera')
 }

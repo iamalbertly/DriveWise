@@ -1,6 +1,6 @@
 # Save this script as "RunBuildInfo.ps1" and run it in PowerShell
 # Ensure PowerShell is running with appropriate permissions to execute the script
-
+./gradlew --stop
 # Clear the screen
 cls
 
@@ -21,6 +21,4 @@ Run-Command "Get-Content .\settings.gradle"
 Run-Command "Get-Content .\gradle.properties"
 Run-Command "Get-Content .\build.gradle"
 Run-Command "Get-Content .\app\build.gradle"
-Run-Command "./gradlew clean --info --stacktrace"
-
-Write-Output "`nPS C:\Users\hp\Documents\GitHub\DriveWise> Script execution completed."
+Run-Command "./gradlew clean --info"
