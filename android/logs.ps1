@@ -15,9 +15,12 @@ function Run-Command {
 }
 
 # Run commands in sequence as if they were typed into the terminal
-Run-Command "Get-Content ..\package.json"
-Run-Command "Get-Content ..\react-native.config.js"
-Run-Command "Get-Content .\settings.gradle"
+Run-Command "cd .. && npx react-native info"
+Run-Command "Get-Content .\package.json"
+Run-Command "Get-Content .\react-native.config.js"
+Run-Command "cd .\android\ && Get-Content .\settings.gradle"
 Run-Command "Get-Content .\gradle.properties"
 Run-Command "Get-Content .\build.gradle"
 Run-Command "Get-Content .\app\build.gradle"
+Run-Command "Get-Content .\app\src\main\java\com\drivewise\MainActivity.kt"
+Run-Command "Get-Content .\app\src\main\java\com\drivewise\MainApplication.kt"

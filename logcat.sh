@@ -1,4 +1,4 @@
 #!/bin/bash
 echo "Starting DriveWise log capture..."
 adb logcat -c  # Clear existing logs
-adb logcat *:S DriveWise_MainActivity:D ReactNative:D ReactNativeJS:D AndroidRuntime:E *:F 
+adb logcat -v threadtime  # Capture detailed logs with timestamps

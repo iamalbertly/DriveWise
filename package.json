@@ -24,19 +24,6 @@
     "react-native-snap-carousel": "^3.9.1",
     "react-native-vision-camera": "^4.6.1"
   },
-  "resolutions": {
-    "@react-native-community/cli": "VERSION",
-    "@react-native-community/cli-clean": "VERSION",
-    "@react-native-community/cli-config": "VERSION",
-    "@react-native-community/cli-debugger-ui": "VERSION",
-    "@react-native-community/cli-doctor": "VERSION",
-    "@react-native-community/cli-link-assets": "VERSION",
-    "@react-native-community/cli-platform-android": "VERSION",
-    "@react-native-community/cli-platform-ios": "VERSION",
-    "@react-native-community/cli-server-api": "VERSION",
-    "@react-native-community/cli-tools": "VERSION",
-    "@react-native-community/cli-types": "VERSION"
-  },
   "devDependencies": {
     "@babel/core": "^7.25.2",
     "@babel/plugin-transform-async-generator-functions": "^7.20.7",
